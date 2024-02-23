@@ -148,6 +148,9 @@
 .fs-15 {
   font-size: 15px;
 }
+.fs-16 {
+  font-size: 16px;
+}
 .fs-25 {
   font-size: 25px;
 }
@@ -215,34 +218,34 @@
 }
 /* End Components */
 
-  /* Start Box */
-  .d-flex {
-    display: flex;
-  }
-  .f-wrap {
-    flex-wrap: wrap;
-  }
-  .align-center {
-    align-items: center;
-  }
-  .space-between {
-    justify-content: space-between;
-  }
-  .d-grid {
-    display: grid;
-  }
-  .gap-20 {
-    gap: 20px;
-  }
-  .d-block {
+/* Start Box */
+.d-flex {
+  display: flex;
+}
+.f-wrap {
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.d-grid {
+  display: grid;
+}
+.gap-20 {
+  gap: 20px;
+}
+.d-block {
+  display: block;
+}
+@media (max-width: 767px) {
+  .block-mobile {
     display: block;
   }
-  @media (max-width: 767px) {
-    .block-mobile {
-      display: block;
-    }
-    .hide-mobile {
-      display: none;
-    }
+  .hide-mobile {
+    display: none;
   }
-  /* End Box */
+}
+/* End Box */
