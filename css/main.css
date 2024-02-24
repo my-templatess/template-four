@@ -381,3 +381,17 @@ a {
   text-decoration: line-through;
 }
 /* End Tasks */
+/* Start Latest Uploads */
+.latest-uploads .info {
+  margin-top: -10px;
+}
+.latest-uploads .info:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.latest-uploads .info img {
+  width: 40px;
+}
+.latest-uploads .info .text {
+  flex-grow: 1;
+}
+/* End Latest Uploads */
