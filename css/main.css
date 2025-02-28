@@ -5,6 +5,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 *:focus {
   outline: none;
@@ -395,3 +396,271 @@ a {
   flex-grow: 1;
 }
 /* End Latest Uploads */
+/* Start Last Progress */
+.last-progress {
+  overflow: hidden;
+}
+.last-progress ul {
+  flex-direction: column;
+  border-left: var(--blue-color) 2px solid;
+  margin-left: 15px;
+}
+.last-progress ul li {
+  padding-bottom: 15px;
+  padding-left: 40px;
+  position: relative;
+}
+.last-progress ul li:last-of-type {
+  padding-bottom: 0;
+}
+.last-progress ul li::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: -5px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border: var(--blue-color) 2px solid;
+  border-radius: 50%;
+}
+.last-progress ul li::after {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: -1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--blue-color);
+  opacity: 1;
+  
+}
+.last-progress ul .light::after {
+  animation: light 1s alternate infinite;
+}
+.last-progress ul li:last-of-type::after {
+  background-color: white;
+}
+@keyframes light {
+  0%{
+      background-color: var(--blue-color);
+  }
+  100%{
+      background-color: white;
+  }
+}
+.last-progress img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  opacity: 0.1;
+  animation: top-down 1s alternate infinite linear;
+}
+@keyframes top-down {
+  0%{
+    bottom: 10px;
+  }
+  100%{
+    bottom: 0;
+  }
+}
+/* End Last Progress */
+/* Start Reminders */
+.reminders ul {
+  flex-direction: column;
+}
+.reminders ul li {
+  margin-bottom: 10px;
+}
+.reminders ul li div {
+  margin-left: 40px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-left: 2px solid;
+}
+.reminders ul li .blue {
+  border-left-color: var(--blue-color);
+}
+.reminders ul li .green {
+  border-left-color: var(--green-color);
+}
+.reminders ul li .orange {
+  border-left-color: var(--orange-color);
+}
+.reminders ul li .red {
+  border-left-color: var(--red-color);
+}
+.reminders ul li div .circle {
+  left: -30px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.reminders ul li div .step {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.reminders ul li div .date {
+  font-size: 12px;
+}
+/* End Reminders */
+/* Start Latest Post */
+.latest .post-writer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 20px;  
+}
+.latest .post-writer .image img {
+  width: 50px;
+  height: 50px;
+}
+.latest .post-writer .text {
+  margin-left: 10px;
+}
+.latest .post-writer .text h5 {
+  display: ;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.latest .post-writer .text span {
+ font-size: 12px;
+}
+.latest  p {
+  text-transform: capitalize;
+  padding: 20px 10px;
+  line-height: 1.8;
+  text-align: center;
+  border-top: rgb(0,0,0,10%) 0.5px solid ;
+  border-bottom: rgb(0,0,0,10%) 0.5px solid ;
+}
+.latest .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.latest .bottom div:first-of-type:hover {
+  color: var(--red-color);
+}
+.latest .bottom div:last-of-type:hover {
+  color: var(--blue-color);
+}
+.latest .bottom span {
+  margin-left: 5px;
+}
+/* End Latest Post */
+/* Start Social */
+.social .social-section {
+  margin-bottom: 10px;
+  position: relative;
+  padding:  0;
+}
+.social .twitter {
+  background-color: #D2ECFB;
+  margin-top: 20px;
+}
+.social .twitter i,
+.social .twitter a {
+  background-color: #1DA1F3;
+}
+.social .facebook {
+  background-color: #D2E4FC;
+}
+.social .facebook i,
+.social .facebook a {
+  background-color: #1878F3;
+}
+.social .youtube {
+  background-color: #FECCCB;
+}
+.social .youtube i,
+.social .youtube a {
+  background-color: #FD0000;
+}
+.social .linkedin {
+  background-color: #CCE4F0;
+}
+.social .linkedin i,
+.social .linkedin a {
+  background-color: #0077B4;
+}
+.social .social-section .icon i {
+  font-size: 30px;
+  margin: 0;
+  width: 50px;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-out;
+}
+.social .social-section .icon i:hover {
+  transform: rotate(5deg);
+}
+.social .social-section .icon span {
+  margin-left: 20px;
+}
+.social .social-section a {
+  color: white;
+  font-size: 12px;
+  margin-right: 10px;
+}
+/* End Social */
+/* Start Projects */
+.projects {
+  min-width: 1000px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.table {
+    overflow-x: scroll; 
+}
+table {
+  min-width: 1000px;
+  border: 1px solid #eee;
+  border-collapse: collapse;
+  overflow-x: scroll; 
+}
+table td {
+  border: 1px solid #eee;
+  font-size: 12px;
+  max-width: fit-content;
+  word-wrap: break-word;
+}
+table tr {
+  transition: 0.3s;
+}
+table tbody tr:hover,
+table tfoot tr:hover {
+  background: #F9F8F6;
+}
+table thead td {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+table tbody td,
+table tfoot td {
+  min-width: 150px;
+  padding: 15px;
+}
+table img {
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+table img:not(:first-of-type){
+  margin-left: -20px;
+}
