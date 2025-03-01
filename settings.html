@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/framework.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/framework.css" />
   <link rel="stylesheet" href="css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
   <title>Settings</title>
 </head>
+
 <body>
   <div class="page d-flex">
     <div class="sidebar bg-white p-20 p-relative">
@@ -50,6 +52,125 @@
         </li>
       </ul>
     </div>
-    <div class="content w-full">    
+    <div class="content w-full">
+      <!-- Start Head -->
+      <div class="head p-15 bg-white">
+        <div class="search p-relative">
+          <input type="search" class="p-10 rad-10" placeholder="Type A Keyword" />
+        </div>
+        <div class="avatar d-flex align-center">
+          <span class="notification p-relative"><i class="fa-regular fa-bell fa-lg"></i></span>
+          <img src="images/avatar.png" alt="photo " />
+        </div>
+      </div>
+      <!-- End Head -->
+      <h1 class="p-relative">Settings</h1>
+      <div class="settings-page m-20 d-grid gap-20">
+        <!-- Start Settings Box -->
+        <div class="control p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Site Control</h2>
+          <p class="mt-0 mb-20 c-grey fs-15">Control The Website If There Is Maintenance</p>
+          <div class="between-flex mb-15">
+            <div>
+              <span>Website Control</sp>
+                <p class="mt-5 mb-0 c-grey fs-13">Open/Close Website And Type The Reason</p>
+            </div>
+            <div>
+              <label> <!-- smoothly checkbox to use everywhere-->
+                <input class="toggle-checkbox" type="checkbox" checked>
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+          <textarea class="close-message p-10 rad-6 d-block w-full" placeholder="Close Message Content"></textarea>
+        </div>
+        <!-- End Settings Box -->
+        <!-- Start General Info -->
+        <div class="general p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">General Info</h2>
+          <p class="mt-0 mb-20 c-grey fs-15">Control The Website If There Is Maintenance</p>
+          <div class="mb-15">
+            <label class="d-block c-grey fs-15 mb-5" for="first">First Name </label>
+            <input class="w-full border-ccc rad-6 p-10" type="text" id="first" placeholder="First Name">
+          </div>
+          <div class="mb-15">
+            <label class="d-block c-grey fs-15 mb-5" for="last">Last Name </label>
+            <input class="w-full border-ccc rad-6 p-10" type="text" id="last" placeholder="Last Name">
+          </div>
+          <div>
+            <label class="d-block c-grey fs-15 mb-5" for="email">Last Name </label>
+            <input class="email w-full border-ccc rad-6 p-10" type="email" id="email" placeholder="a@nn.sy" disabled>
+            <a class="c-blue" href="#">Change</a>
+          </div>
+        </div>
+        <!-- End General Info -->
+        <!-- Start Security Info -->
+        <div class="security p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Security Info</h2>
+          <p class="mt-0 mb-20 c-grey fs-15">Security Information About Your Account</p>
+          <div class="security-section between-flex pb-15 mb-15">
+            <div>
+              <span>
+                Password
+              </span>
+              <p class="c-grey fs-13 mt-5">
+                Last Change On 25/10/2021
+              </p>
+            </div>
+            <div><a class="bg-blue btn-shape rad-6 c-white fs-15 " href="#">Change</a></div>
+          </div>
+          <div class="security-section between-flex pb-15 mb-15">
+            <div>
+              <span>
+                Two-Factor Authentication
+              </span>
+              <p class="c-grey fs-13 mt-5">
+                Enable/Disable The Feature
+              </p>
+            </div>
+            <div>
+              <label> <!-- smoothly checkbox to use everywhere-->
+                <input class="toggle-checkbox" type="checkbox" checked>
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+          <div class="security-section between-flex pb-15 mb-15">
+            <div>
+              <span>
+                Devices
+              </span>
+              <p class="c-grey fs-13 mt-5">
+                Check The Login Devices List
+              </p>
+            </div>
+            <div><a class="bg-eee btn-shape rad-6 c-black fs-15 " href="#">Devices</a></div>
+          </div>
+        </div>
+        <!-- End Security Info -->
+        <!-- Start Social info -->
+        <div class="social-boxes p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Social Info</h2>
+          <p class="mt-0 mb-20 c-grey fs-15">Social Media Information</p>
+          <div class="d-flex align-center mb-15">
+            <i class="fa-brands fa-twitter center-flex c-grey"></i>
+            <input class="w-full" type="text" placeholder="Twitter Username">
+          </div>
+          <div class="d-flex align-center mb-15">
+            <i class="fa-brands fa-facebook-f center-flex c-grey"></i>
+            <input class="w-full" type="text" placeholder="Facebook Username">
+          </div>
+          <div class="d-flex align-center mb-15">
+            <i class="fa-brands fa-linkedin center-flex c-grey"></i>
+            <input class="w-full" type="text" placeholder="Twitter Username">
+          </div>
+          <div class="d-flex align-center mb-15">
+            <i class="fa-brands fa-youtube center-flex c-grey"></i>
+            <input class="w-full" type="text" placeholder="Twitter Username">
+          </div>
+        </div>
+        <!-- End Social info -->
+      </div>
 </body>
+
 </html>
