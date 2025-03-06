@@ -1092,3 +1092,106 @@ table span {
   }
 }
 /* End Profile Page */
+/* Start Projects Page */
+.projects-page .projects {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.projects-page .projects .project .date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.projects-page .projects .project h4 {
+  font-weight: normal;
+}
+.projects-page .projects .project .images a {
+  display: inline-block;
+}
+.projects-page .projects .project .images a img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.projects-page .projects .project .images a:not(:first-of-type) img {
+  margin-left: -20px;
+}
+.projects-page .projects .project .do {
+  justify-content: flex-end;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.projects-page .projects .project .do span { 
+    padding: 3px 8px;
+    margin-left: 5px;
+    width: fit-content;
+}
+.projects-page .projects .project .info {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+.projects-page .projects .project .info .prog {
+  width: 260px;
+  height: 8px;
+  position: relative;
+  background-color: #eee;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.projects-page .projects .project .info .prog span {
+  height: 8px;
+  position: absolute;
+
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/* End Projects Page */
+/* Start Courses Page */
+.courses {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.courses .course {
+  overflow: hidden;
+}
+.courses .course .instructor {
+  position: absolute;
+  border: 2px solid white;
+  top: 20px;
+  left: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.courses .course .description {
+  line-height: 1.6;
+}
+.courses .course .info {
+  border-top: 1px solid #eee;
+}
+.courses .course .info .title {
+  position: absolute;
+  left: 50%;
+  top: -13px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+/* End Courses Page */
